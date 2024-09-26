@@ -5,6 +5,7 @@ import TransitionEffect from "../components/TransitionEffect"
 import { Layout } from '../components/Layout'
 import axios from 'axios'
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -32,9 +33,10 @@ const Contact = () => {
   }
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const BASE_URL = process.env.API_BASE_URL;
 
     try {
-      const response = await axios.post('http://localhost:3000/api/messages', formData);
+      const response = await axios.post(`${BASE_URL}/api/messages`, formData);
       if (response.status === 201) {
         setIsValidated(true); //set the state to true
         clearForm();
