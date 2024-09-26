@@ -33,10 +33,10 @@ const Contact = () => {
   }
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const BASE_URL = process.env.API_BASE_URL;
+    const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:3000";
 
     try {
-      const response = await axios.post(`${BASE_URL}/api/messages`, formData);
+      const response = await axios.post(`${API_BASE_URL}/api/messages`, formData);
       if (response.status === 201) {
         setIsValidated(true); //set the state to true
         clearForm();
