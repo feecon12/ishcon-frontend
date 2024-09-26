@@ -36,7 +36,7 @@ const Contact = () => {
     const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:3000";
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/messages`, formData);
+      const response = await axios.post(`${API_BASE_URL}api/messages`, formData);
       if (response.status === 201) {
         setIsValidated(true); //set the state to true
         clearForm();
