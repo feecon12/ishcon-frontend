@@ -56,7 +56,7 @@ const Contact = () => {
     try {
       const response = await axios.post(`${API_BASE_URL}api/messages`, formData);
 
-      if (response.status === 200) {
+      if (response.status === 201) {
         setIsValidated(true); // Set the state to true
         clearForm(); // Clear form after successful submission
 
