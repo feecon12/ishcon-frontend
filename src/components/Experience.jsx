@@ -49,22 +49,34 @@ const Experience = () => {
             bullet: "Optimized data processing by implementing Ruby transformation logic and Regular Expressions, enhancing processing speed by 30%."
         },
         {
+            bullet: "Utilized Docker for containerization and Kubernetes for orchestration to streamline deployment processes and ensure consistent environments across development, testing, and production."
+        },
+        {
             bullet: "Performed peer code reviews that helped achieving the quality work significantly by 90%."
         },
         {
             bullet: "Collaborated with different stakeholders on Jira, then Azure DevOps as a part of agile development practice."
         },
+        {
+            bullet: "Tech Stack: JavaScript, React, Azure DevOps, Docker, Kubernetes"
+        },
 
     ]
     const pwcWork = [
         {
-            bullet: "Headed the development of a scalable web application using Express/Nodejs, implementing best practices for maintainability and extensibility."
+            bullet: "Spearheaded the development of a scalable web application using Express/Nodejs, implementing best practices to ensure maintainability and extensibility"
         },
         {
-            bullet: "Implemented RESTful APIs with Express Framework, reducing integration time by 20% through seamless external service integration."
+            bullet: "Implemented real-time features using Node WebSocket communication, enabling live updates and interactive user experiences reducing the data latency by 30% "
         },
         {
-            bullet: "Utilized Postman for API testing, accelerating development cycles, and enhancing software quality."
+            bullet: "Developed RESTful APIs using Express Framework for seamless integration with external services and third-party applications"
+        },
+        {
+            bullet: "Successfully coached freshers with their onboarding project of “E-commerce platform” (full stack development) and mentored them to facilitate with their team"
+        },
+        {
+            bullet: "Tech Stack: JavaScript, Node.js, Express.js, Jira"
         },
     ]
 

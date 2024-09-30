@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import ErrorPage from "./pages/ErrorPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import { Toaster } from "react-hot-toast";
 // import Login from "./components/Login";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <main className={`font-mont bg-light  dark:bg-dark w-full min-h-screen`}>
         <BrowserRouter>
           <Header />
-
+          <Toaster position="top-right" />
           <Routes>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/" element={<Home />}></Route>

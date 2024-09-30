@@ -50,15 +50,23 @@ const Education = () => {
                         type={'Specialized in Software Development & Problem Solving'}
                         time={'2022-2024'}
                         place={'Scaler, InterviewBit'}
-                        info="A meeting to discuss project updates.Please bring your progress reports.Refreshments will be provided."
+                        //info="A meeting to discuss project updates.Please bring your progress reports.Refreshments will be provided."
 
                     />
 
                     <Details
-                        type={'Bachelor of Technology In Electronics and Communication'}
+                        type={'Bachelor\'s In Electronics and Communication'}
                         time={'2016-2020'}
                         place={'ITER, S\'O\'A University, Bhubaneswar'}
-                        info="Relevant courses included Electronics and Communication, Computer Architecture, and programming in MATLAB, and Python"
+                        //info="Relevant courses included Electronics and Communication, Computer Architecture, and programming in MATLAB, and Python"
+
+                    />
+
+                    <Details
+                        type={'Intermediate in PCM'}
+                        time={'2014-2016'}
+                        place={'Kendriya Vidyalaya, Bargarh'}
+                        //info="Relevant courses included Electronics and Communication, Computer Architecture, and programming in MATLAB, and Python"
 
                     />
 
