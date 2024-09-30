@@ -54,7 +54,7 @@ const Contact = () => {
     const toastId = toast.loading("Sending message...");
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/messages`, formData);
+      const response = await axios.post(`${API_BASE_URL}api/messages`, formData);
 
       if (response.status === 200) {
         setIsValidated(true); // Set the state to true
