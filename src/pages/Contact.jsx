@@ -61,13 +61,13 @@ const Contact = () => {
         clearForm(); // Clear form after successful submission
 
         // Success toast
-        toast.success("Message delivered!", { id: toastId, duration: 1000 });
+        toast.success("Message delivered!", { id: toastId, duration: 3000 });
       }
     } catch (error) {
       console.error("Error sending message:", error.response?.data || error.message);
 
       // Error toast
-      toast.error("Error while sending message. Please try again later.", { id: toastId, duration: 1000 });
+      toast.error("Error while sending message. Please try again later.", { id: toastId, duration: 3000 });
     } finally {
       setIsSubmitting(false); // Re-enable the button after submission
     }
