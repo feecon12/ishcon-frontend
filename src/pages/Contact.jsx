@@ -81,7 +81,8 @@ const Contact = () => {
     setIsSubmitting(true); // Disable button
 
     // Use environment variable for API URL (set in Vercel for production/staging)
-    const API_BASE_URL = process.env.REACT_APP_API_URL_PROD || process.env.REACT_APP_API_URL_STAGE || "http://localhost:5000";
+    const API_BASE_URL = process.env.REACT_APP_API_URL;
+    console.log(API_BASE_URL)
 
     // Show loading toast before axios request
     const toastId = toast.loading("Sending message...");
