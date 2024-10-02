@@ -41,6 +41,38 @@ const Contact = () => {
     setIsValidated(isFormValid); // Button will be enabled if fields are filled
   }
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   if (!isValidated) return; // Prevent submission if form is not valid
+
+  //   setIsSubmitting(true); // Disable button
+
+  //   const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
+  //   // Show loading toast before axios request
+  //   const toastId = toast.loading("Sending message...");
+
+  //   try {
+  //     const response = await axios.post(`${API_BASE_URL}api/messages`, formData);
+
+  //     if (response.status === 201) {
+  //       setIsValidated(true); // Set the state to true
+  //       clearForm(); // Clear form after successful submission
+
+  //       // Success toast
+  //       toast.success("Message delivered!", { id: toastId, duration: 3000 });
+  //     }
+  //   } catch (error) {
+  //     console.error("Error sending message:", error.response?.data || error.message);
+
+  //     // Error toast
+  //     toast.error("Error while sending message. Please try again later.", { id: toastId, duration: 3000 });
+  //   } finally {
+  //     setIsSubmitting(false); // Re-enable the button after submission
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -48,13 +80,16 @@ const Contact = () => {
 
     setIsSubmitting(true); // Disable button
 
-    const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+    // Use environment variable for API URL (set in Vercel for production/staging)
+    const API_BASE_URL = process.env.REACT_APP_API_URL;
+    console.log(API_BASE_URL)
 
     // Show loading toast before axios request
     const toastId = toast.loading("Sending message...");
 
     try {
-      const response = await axios.post(`${API_BASE_URL}api/messages`, formData);
+      // Make sure your API URL is correctly formatted (e.g., with a trailing slash)
+      const response = await axios.post(`${API_BASE_URL}/api/messages`, formData);
 
       if (response.status === 201) {
         setIsValidated(true); // Set the state to true
